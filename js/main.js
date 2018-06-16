@@ -1,17 +1,4 @@
 $(document).ready(function () {
-	//Load after above the fold CSS
-	function loadStyleSheet(src) {
-		if (document.createStyleSheet) document.createStyleSheet(src);
-		else {
-			var stylesheet = document.createElement('link');
-			stylesheet.href = src;
-			stylesheet.rel = 'stylesheet';
-			stylesheet.type = 'text/css';
-			document.getElementsByTagName('head')[0].appendChild(stylesheet);
-		}
-	}
-
-	loadStyleSheet('./css/secondary.css');
 
 	//Navigation menu scrollTo
 	$('header nav ul li a').click(function (event) {
